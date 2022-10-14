@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class agenda extends Model
+{
+    use HasFactory;
+    protected $table = 'agendas';
+    protected $fillable = [
+    'user_id',
+    'shalat',
+    'dzikir',
+    'berbuat_baik',
+    'ceramah',
+];
+
+}
